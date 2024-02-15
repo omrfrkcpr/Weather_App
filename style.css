@@ -4,10 +4,37 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: inherit; /* Arka plan rengi */
+}
+
+video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1; /* Videoyu arka planda tutmak için */
+}
+
+.content {
+  z-index: 1; /* Diğer içerikleri videoyun önüne getirmek için */
+  color: inherit;
+  text-align: center;
+}
+
 .img-container {
   position: relative;
   position: absolute;
   bottom: 0;
+  background-color: inherit;
 }
 
 .container {
@@ -17,6 +44,7 @@
   top: 200px;
   left: 360px;
 }
+
 .icons {
   font-size: 0.8rem;
   margin: 5px 5px 15px 5px;
