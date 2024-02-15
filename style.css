@@ -40,7 +40,7 @@ video {
 .container {
   position: absolute;
   width: 305px;
-  height: 515px;
+  height: 520px;
   top: 200px;
   left: 360px;
 }
@@ -52,4 +52,44 @@ video {
 
 ul {
   overflow: auto;
+  height: 340px;
+}
+
+ul::-webkit-scrollbar {
+  width: 10px; /* Kaydırma çubuğu genişliği */
+}
+
+ul::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Kaydırma çubuğu arka plan rengi */
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #c4c3c3; /* Kaydırma çubuğu rengi */
+  border-radius: 5px; /* Kaydırma çubuğu köşelerini yuvarla */
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background: #919191; /* Fare üzerine geldiğinde kaydırma çubuğu rengi */
+}
+
+ul li {
+  height: 316px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.city-temperature {
+  position: relative;
+}
+
+.city-temperature > .temperature {
+  font-size: 5rem;
+}
+
+.city-temperature > .unit {
+  font-size: smaller;
+  font-weight: lighter;
+  font-size: 3rem;
 }
