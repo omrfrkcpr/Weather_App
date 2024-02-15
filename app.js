@@ -63,7 +63,8 @@ const showOnScreen = (cityWeather) => {
   console.log("City Weather on Screen:", cityWeather); // For checking city Weather on Screen
   const citiesUl = document.querySelector(".cities");
   const { name, main, weather, sys } = cityWeather;
-  citiesUl.innerHTML += `
+  citiesUl.innerHTML =
+    `
     <li class="list-unstyled bg-warning p-3 pt-2 rounded-4 mb-2">
         <div class="text-end mb-1">
             <button class="remove border-0 bg-warning px-1"><i class="fa fa-times" aria-hidden="true"></i>
@@ -90,7 +91,7 @@ const showOnScreen = (cityWeather) => {
             }</div>
         </div>
     </li>
-    `;
+    ` + citiesUl.innerHTML;
 
   // remove closest li after clicking on remove button
   document.querySelectorAll(".remove").forEach((removeBtn) => {
