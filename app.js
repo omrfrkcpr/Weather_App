@@ -10,10 +10,8 @@ const inputText = document.querySelector("input");
 const getWeather = async (cityName) => {
   try {
     console.log("City Name:", cityName); // For checking city name
-
     let lang = "en";
-    require("dotenv").config(); // dotenv module
-    const API_KEY = process.env.API_KEY; // get API from .env file
+    const API_KEY = "19fadf383f77445c7ead85a8d7ccce88";
     const fetchAPI = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&lang=${lang}&appid=${API_KEY}`
     );
