@@ -12,7 +12,8 @@ const getWeather = async (cityName) => {
     console.log("City Name:", cityName); // For checking city name
 
     let lang = "en";
-    const API_KEY = "19fadf383f77445c7ead85a8d7ccce88";
+    require("dotenv").config(); // dotenv module
+    const API_KEY = process.env.API_KEY; // get API from .env file
     const fetchAPI = await fetch(
       `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&lang=${lang}&appid=${API_KEY}`
     );
@@ -71,7 +72,7 @@ const showOnScreen = (cityWeather) => {
             </button>
         </div>
         <div class="d-flex text-start city-info">
-            <h1 class="text-secondary">${name}</h1>
+            <h2 class="text-secondary">${name}</h2>
             <p class="bg-warning-subtle h-50 rounded-3 px-1 text-black">${
               sys.country
             }</p>

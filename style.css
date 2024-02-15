@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: inherit; /* Arka plan rengi */
+  background-color: inherit;
 }
 
 video {
@@ -21,11 +21,11 @@ video {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1; /* Videoyu arka planda tutmak için */
+  z-index: -1;
 }
 
 .content {
-  z-index: 1; /* Diğer içerikleri videoyun önüne getirmek için */
+  z-index: 1;
   color: inherit;
   text-align: center;
 }
@@ -55,21 +55,60 @@ ul {
   height: 340px;
 }
 
+.city-info {
+  overflow: hidden;
+}
+
+.city-info > h2 {
+  max-height: 50px;
+  max-width: 70%;
+  overflow: auto;
+  word-wrap: break-word;
+  font-size: 2vw;
+}
+
+.city-info > h2::-webkit-scrollbar {
+  width: 5px;
+  display: none;
+}
+
+.city-info > h2::-webkit-scrollbar-track {
+  background: linear-gradient(
+    to right,
+    #f0f0f0,
+    #d9d9d9
+  ); /* Linear gradient ile arka plan rengi */
+}
+
+.city-info > h2::-webkit-scrollbar-thumb {
+  background: #866503;
+  border-radius: 5px;
+}
+
+.city-info > h2::-webkit-scrollbar-thumb:hover {
+  background: #919191;
+}
+
 ul::-webkit-scrollbar {
-  width: 10px; /* Kaydırma çubuğu genişliği */
+  width: 8px;
 }
 
 ul::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Kaydırma çubuğu arka plan rengi */
+  background: linear-gradient(
+    to bottom,
+    #e7b521,
+    #e6c561
+  ); /* Linear gradient ile arka plan rengi */
+  border-radius: 5px;
 }
 
 ul::-webkit-scrollbar-thumb {
-  background: #c4c3c3; /* Kaydırma çubuğu rengi */
-  border-radius: 5px; /* Kaydırma çubuğu köşelerini yuvarla */
+  background: #c4c3c3;
+  border-radius: 5px;
 }
 
 ul::-webkit-scrollbar-thumb:hover {
-  background: #919191; /* Fare üzerine geldiğinde kaydırma çubuğu rengi */
+  background: #919191;
 }
 
 ul li {
