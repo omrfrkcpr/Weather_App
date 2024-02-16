@@ -39,10 +39,10 @@ video {
 
 .container {
   position: absolute;
-  width: 305px;
-  height: 520px;
-  top: 200px;
-  left: 360px;
+  width: 260px;
+  height: 445px;
+  top: 590px;
+  left: 515px;
 }
 
 .icons {
@@ -52,11 +52,18 @@ video {
 
 ul {
   overflow: auto;
-  height: 340px;
+  height: 250px;
 }
 
 .city-info {
   overflow: hidden;
+}
+
+.submit {
+  width: 40px;
+  text-align: center;
+  font-size: 12px;
+  padding: 4px 0 !important;
 }
 
 .city-info > h2 {
@@ -124,11 +131,11 @@ input:focus {
 }
 
 .city-temperature > .temperature {
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 .city-temperature > .unit {
   font-size: smaller;
   font-weight: lighter;
-  font-size: 3rem;
+  font-size: 2rem;
 }
