@@ -14,6 +14,8 @@ Project aims to display current weather data of searched city around the world w
 
 ## Outcome
 
+![weather-app](https://github.com/omrfrkcpr/Weather_App/assets/77440899/2dcdfaf7-966f-4aaf-87c7-f17e3dc1520a)
+
 ## Project Skeleton
 
 ```
