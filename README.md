@@ -1,5 +1,7 @@
 # Weather App
 
+https://omrfrkcpr.github.io/Weather_App/
+
 ## Description
 
 Project aims to display current weather data of searched city around the world with fetching Weather Api data.
