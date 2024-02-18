@@ -20,11 +20,11 @@ Weather_App (folder)
 |----assets
 |----.gitignore
 |----app.js
+|----index.html
 |----LICENCE
 |----readme.md
 |----style.css
 |----weather-app.gif
-|----weather.html
 ```
 
 ## Problem Statement
