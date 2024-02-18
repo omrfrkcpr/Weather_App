@@ -15,44 +15,45 @@ body {
   background-color: inherit;
 }
 
-video {
-  position: fixed;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
-}
-
-.content {
-  z-index: 1;
-  color: inherit;
-  text-align: center;
-}
-
 .img-container {
-  position: relative;
-  position: absolute;
-  bottom: 0;
-  background-color: inherit;
+  /* position: relative; */
+  background-image: url(assets/phone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 400px;
+  height: 670px;
+  min-width: 330px;
 }
 
 .container {
-  position: absolute;
-  width: 260px;
-  height: 445px;
-  top: 590px;
-  left: 515px;
+  width: 285px;
+  height: 610px;
 }
 
 .icons {
-  font-size: 0.8rem;
-  margin: 5px 5px 15px 5px;
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.result {
+  height: 30px;
+  margin: 10px;
+}
+
+.message {
+  background-color: #725704;
+  color: #ffca2c;
+  border-radius: 10px;
+}
+
+.border-0 {
+  background-color: inherit;
 }
 
 ul {
   overflow: auto;
-  height: 250px;
+  height: 380px;
 }
 
 .city-info {
@@ -71,7 +72,7 @@ ul {
   max-width: 70%;
   overflow: auto;
   word-wrap: break-word;
-  font-size: 2vw;
+  font-size: 35px;
 }
 
 .city-info > h2::-webkit-scrollbar {
@@ -119,7 +120,7 @@ ul::-webkit-scrollbar-thumb:hover {
 }
 
 ul li {
-  height: 316px;
+  height: 360px;
 }
 
 input:focus {
@@ -131,11 +132,26 @@ input:focus {
 }
 
 .city-temperature > .temperature {
-  font-size: 4rem;
+  font-size: 90px;
 }
 
 .city-temperature > .unit {
-  font-size: smaller;
   font-weight: lighter;
-  font-size: 2rem;
+  font-size: 40px;
 }
+
+.description {
+  font-size: 20px;
+}
+
+/* ---------------------------------- */
+/*            RESPONSIVITY            */
+/* ---------------------------------- */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 330px) {
+  .img-container {
+    display: none !important;
+  }
+}
+
